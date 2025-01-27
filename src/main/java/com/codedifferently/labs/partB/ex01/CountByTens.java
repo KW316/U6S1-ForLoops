@@ -7,6 +7,11 @@ public class CountByTens {
         /**
          * Your code goes here
          */
+        for(int i = 10; i <= 100; i++){
+            if(i % 10 == 0){
+                System.out.println(i);
+            }
+        }
         return response;
     }
 

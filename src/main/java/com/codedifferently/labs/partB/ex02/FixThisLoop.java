@@ -7,6 +7,9 @@ public class FixThisLoop {
         /**
          * Your code goes here
          */
+        for(int i = 0; i < 5; i++){
+            System.out.println("Hello");
+        }
 
         return response;
 

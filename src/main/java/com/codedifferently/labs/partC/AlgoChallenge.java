@@ -1,6 +1,15 @@
 package com.codedifferently.labs.partC;
 
 public class AlgoChallenge {
+    public static void main(String[] args) {
+        System.out.println(avengersAssemble(false, false));
+        System.out.println(avengersAssemble(false, false));
+        System.out.println(avengersAssemble(true, false));
+        System.out.println(avengersAssemble(true, true));
+        System.out.println(nearValue(93));
+        System.out.println(nearValue(90));
+        System.out.println(nearValue(89));
+    }
      /* Problem 1
     The parameter dcHero is true if it is an DC Hero,
     and the parameter avengerHero is true if the hero is an Avenger.
@@ -8,14 +17,18 @@ public class AlgoChallenge {
     Return true if the avengers are ready to assemble.
     Example:
     avengersAssemble(false, false) --> true
-    avengersAssemble(false, true) --> true
+    avengersAssemble(false, false) --> true
     avengersAssemble(true, false) --> false
     avengersAssemble(true, true) --> true
      */
 
     public static Boolean avengersAssemble(boolean dcHero, boolean avengerHero) {
-
-        return null;
+        if(avengerHero == true){
+            return true;
+        }if(dcHero == false && avengerHero == false){
+            return true;
+        }
+        return false;
 
     }
 
@@ -31,8 +44,10 @@ public class AlgoChallenge {
      */
 
     public static Boolean nearValue(int n) {
-
-        return null;
+        if( Math.abs(200-n) <= 10 || Math.abs(100-n) <= 10){
+            return true;
+        }
+        return false;
     }
 
 }
